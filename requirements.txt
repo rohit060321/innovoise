@@ -1,0 +1,11 @@
+numpy
+scikit-learn
+networkx
+streamlit
+plotly
+pandas
+pyyaml
+pytest
+fastapi
+uvicorn
+httpx

@@ -1,0 +1,20 @@
+project_name: morphe
+seed: 42
+
+embedding:
+  provider: "auto"
+  model_name: "all-MiniLM-L6-v2"
+  dimension: 128
+  cache_embeddings: true
+
+graph:
+  initial_clusters: 4
+  max_module_capacity: 15
+  min_module_size: 3
+  top_k_centroids: 2
+  expand_shortcuts: true
+  similarity_metric: "cosine"
+
+storage:
+  db_path: "morphe_memory.db"
+  snapshot_dir: "snapshots"

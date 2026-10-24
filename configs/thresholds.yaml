@@ -1,0 +1,33 @@
+thresholds:
+  split_variance: 0.45
+  split_size: 15
+  merge_similarity: 0.82
+  shortcut_coaccess: 2
+  shortcut_max_distance: 1
+
+validation:
+  min_delta_recall: -0.01
+  max_delta_latency_ratio: 1.35
+
+rl_policy:
+  learning_rate: 0.1
+  alpha: 0.5
+  reward_weights:
+    recall: 1.0
+    latency: 0.2
+    complexity: 0.05
+    rejection_penalty: 0.3
+
+validation:
+  min_delta_recall: -0.01
+  max_delta_latency_ratio: 1.35
+
+rl_policy:
+  learning_rate: 0.1
+  alpha: 0.5
+  reward_weights:
+    recall: 1.0
+    latency: 0.2
+    complexity: 0.05
+    rejection_penalty: 0.3
+
