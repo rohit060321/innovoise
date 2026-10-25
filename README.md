@@ -216,22 +216,5 @@ morphe/
 
 ---
 
-## System Presentation & Demonstration Guide
-
-When presenting to hackathon judges, follow this sequence:
-
-1. **The Hook (30 sec)**:
-   > *"Most AI agents today rely on static memory architectures where every record is dumped into a flat vector database. As memory grows, retrieval degrades, modules become overloaded, and latency climbs. We built MORPHE: a self-reconfiguring memory system whose structure reorganizes itself based on performance feedback."*
-
-2. **The Mechanism (1 min)**:
-   > *"Notice our central principle: 'RL proposes, validation disposes'. We represent memory as a NetworkX graph of specialized modules. Queries are routed strictly through module centroids and learned 1-hop shortcuts -- never global scans. When a module becomes overloaded, high variance triggers a Split. When modules are co-accessed, MORPHE creates a topological Shortcut."*
-
-3. **The Live Action (2 min)**:
-   > *"Let's see it live in our dashboard:
-   > 1. Look at Module M1 -- it's overloaded with high variance.
-   > 2. We trigger a Split. Notice that MORPHE clones the graph into an isolated sandbox, tests it against a fixed tuning query suite, validates that Recall is preserved, and commits Version 2.
-   > 3. Now observe our Safety Gate: when we simulate a destructive corruption mutation, the sandbox detects the recall drop, rejects it, and discards the sandbox. Production memory is 100% safeguarded!
-   > 4. Need to undo anything? Any historical version snapshot can be restored in 1 click."*
-
 4. **The Results & Differentiator (1.5 min)**:
    > *"Our reinforcement learning differentiator is a LinUCB contextual bandit. In our Three-Way Comparative Arena, Static Memory stays flat, Heuristics make greedy errors, while our RL-guided policy achieves superior held-out retrieval quality with minimal rollbacks."*
