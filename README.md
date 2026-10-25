@@ -215,6 +215,4 @@ morphe/
 ```
 
 ---
-
-4. **The Results & Differentiator (1.5 min)**:
    > *"Our reinforcement learning differentiator is a LinUCB contextual bandit. In our Three-Way Comparative Arena, Static Memory stays flat, Heuristics make greedy errors, while our RL-guided policy achieves superior held-out retrieval quality with minimal rollbacks."*
